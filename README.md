@@ -5,12 +5,11 @@
 [![dependencies Status](https://david-dm.org/ffloriel/github-sponsors/status.svg)](https://david-dm.org/ffloriel/github-sponsors)
 [![devDependencies Status](https://david-dm.org/ffloriel/github-sponsors/dev-status.svg)](https://david-dm.org/ffloriel/github-sponsors?type=dev)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/e89da576413e44b5943d504bb134edb5)](https://www.codacy.com/app/florielfedry/github-sponsors?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Ffloriel/github-sponsors&amp;utm_campaign=Badge_Grade)
-[![Codacy Badge](https://api.codacy.com/project/badge/Coverage/2f2f3fb0a5c541beab2018483e62a828)](https://www.codacy.com/app/Ffloriel/github-sponsors?utm_source=github.com&utm_medium=referral&utm_content=Ffloriel/github-sponsors&utm_campaign=Badge_Coverage)
+[![Codacy Badge](https://api.codacy.com/project/badge/Coverage/e89da576413e44b5943d504bb134edb5)](https://www.codacy.com/app/florielfedry/github-sponsors?utm_source=github.com&utm_medium=referral&utm_content=Ffloriel/github-sponsors&utm_campaign=Badge_Coverage)
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 [![npm](https://img.shields.io/npm/v/github-sponsors.svg)](https://www.npmjs.com/package/github-sponsors)
 [![license](https://img.shields.io/github/license/ffloriel/github-sponsors.svg)]()
 [![dependabot](https://img.shields.io/badge/dependabot-enabled-brightgreen.svg?style=plastic&logo=dependabot)]()
-
 
 <p align="center">
 	<img src="https://github.githubassets.com/images/modules/site/sponsors/logo-mona.svg" height="200" width="200" alt="Mona logo"/>

@@ -38,9 +38,9 @@ export const print = (color = null) => (str = "") => {
 
 export const printDonationMessage = (
   fundingConfig,
-  pkgPath,
+  pkgPath
 ) => {
-  const packageJson = require(path.resolve(pkgPath, './package.json'));
+  const packageJson = require(path.resolve(pkgPath) + '/package.json');
   const dim = print("dim");
   const yellow = print("yellow");
   const emptyLine = print();
