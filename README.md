@@ -21,7 +21,7 @@ GitHub Sponsors has been announced during Github Satellite at Berlin May 23rd. I
 A few ways to do that already exists, but GitHub Sponsors is taking responsibility in this area by adding this feature directly on GitHub.
 You can add a Sponsor button on the top of your projects and it will open a popup window containing links to the donation pages.
 
-It allows open source maintainers to print a post-install message easily for their packages. `github-sponsors` is using FUNDING.yml to retrieve the information and displaying it to the user.
+This package allows open source maintainers to print a post-install message easily for their packages. `github-sponsors` is using FUNDING.yml to retrieve the information and displaying it to the user.
 
 
 ## Getting Started
