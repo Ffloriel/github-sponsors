@@ -26,7 +26,33 @@ It allows open source maintainers to print a post-install message easily for the
 
 ## Getting Started
 
+### Installation
 
+```
+npm install --save github-sponsors
+```
+
+### Usage
+
+Add in package.json:
+
+```json
+{
+  "scripts": {
+    "postinstall": "github-sponsors"
+  }
+}
+```
+
+```
+Usage: github-sponsors [options]
+
+Options:
+  -V, --version         output the version number
+  -t, --thanks-message  Add a thank you message
+  -d, --donate-message  Add a donate message
+  -h, --help            output usage information
+```
 
 ## Contributing
 
