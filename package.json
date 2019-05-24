@@ -15,7 +15,7 @@
     "dev": "rollup -c rollup.config.js -w",
     "build": "rollup -c rollup.config.js",
     "prettier": "prettier --no-config --write '{src,__{tests,mocks}__}/**/*.js'",
-    "lint": "eslint",
+    "lint": "eslint src/",
     "justatest": "./bin/github-sponsors.js",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"

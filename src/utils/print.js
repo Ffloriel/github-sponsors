@@ -1,6 +1,9 @@
+/* eslint-disable no-console */
+/* eslint-disable no-control-regex */
+
 import { execSync } from "child_process";
-import path from 'path';
 import chalk from "chalk";
+import path from "path";
 
 // from nuxt/opencollective
 
@@ -36,11 +39,8 @@ export const print = (color = null) => (str = "") => {
   console.log(leftPadding, str);
 };
 
-export const printDonationMessage = (
-  fundingConfig,
-  pkgPath
-) => {
-  const packageJson = require(path.resolve(pkgPath) + '/package.json');
+export const printDonationMessage = (fundingConfig, pkgPath) => {
+  const packageJson = require(path.resolve(pkgPath) + "/package.json");
   const dim = print("dim");
   const yellow = print("yellow");
   const emptyLine = print();
