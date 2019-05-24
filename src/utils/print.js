@@ -34,16 +34,16 @@ export const print = (color = null) => (str = '') => {
   console.log(leftPadding, str)
 }
 
-const DEFAULT_THANKS_MESSAGE = ``;
-const DEFAULT_DONATE_MESSAGE = ``;
+const DEFAULT_THANKS_MESSAGE = `Thanks for installing ${packageJson.name}`;
+const DEFAULT_DONATE_MESSAGE = "Please consider donating to help us maintain this package.";
 
-export const printDonationMessage = (fundingConfig, thanksMessage, donateMessage) => {
+export const printDonationMessage = (fundingConfig, thanksMessage = DEFAULT_THANKS_MESSAGE, donateMessage = DEFAULT_DONATE_MESSAGE) => {
   const dim = print('dim')
   const yellow = print('yellow')
   const emptyLine = print()
 
-  yellow(thanksMessage || `Thanks for installing ${packageJson.name} `)
-  dim(donateMessage || `Please consider donating to help us maintain this package.`)
+  yellow(thanksMessage)
+  dim(donateMessage)
   emptyLine()
   emptyLine()
   for (const [platform, value] of Object.entries(fundingConfig)) {
@@ -63,9 +63,8 @@ export const printDonationMessage = (fundingConfig, thanksMessage, donateMessage
           print()(`${chalk.underline(`https://ko-fi.com/${value}`)}`);
         break;
       case "tidelift":
-          const [platformName, packageName] = value.split('/')
           print()(chalk.bold("Tidelift"));
-          print()(`${chalk.underline(`https://tidelift.com/subscription/pkg/${platformName}-${packageName}`)}`);
+          print()(`${chalk.underline(`https://tidelift.com/funding/github/${value}`)}`);
         break;
       case "custom":
           print()(chalk.bold("Sponsorship"));
@@ -74,7 +73,6 @@ export const printDonationMessage = (fundingConfig, thanksMessage, donateMessage
       default:
         break;
     }
-    // print()(`${chalk.bold(`${key}`)}: ${chalk.underline(value)}`)
   }
   
   emptyLine()

@@ -4,7 +4,7 @@ import YAML from 'yaml'
 
 const FUNDING_FILENAME = 'FUNDING.yml'
 
-// Parse the Funding.yml and return the content
+// Parse the FUNDING.yml and return the content
 export const parseFundingFile = async () => {
   let isFileExist = false
   const pathToFile = `${process.cwd()}/.github/${FUNDING_FILENAME}`
