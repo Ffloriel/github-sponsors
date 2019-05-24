@@ -1,0 +1,54 @@
+{
+  "name": "github-sponsors",
+  "version": "1.0.0",
+  "description": "Prompt your users to donate after `npm install`",
+  "main": "./lib/github-sponsors.js",
+  "module": "./lib/github-sponsors.es.js",
+  "jsnext:main": "./lib/github-sponsors.es.js",
+  "bin": "./bin/github-sponsors.js",
+  "scripts": {
+    "test": "jest",
+    "dev": "rollup -c rollup.config.js -w",
+    "build": "rollup -c rollup.config.js",
+    "prettier": "prettier --no-config",
+    "lint": "eslint",
+    "justatest": "./bin/github-sponsors.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ffloriel/github-sponsors.git"
+  },
+  "keywords": [
+    "github",
+    "sponsors",
+    "opencollective",
+    "community",
+    "bridge",
+    "ko-fi",
+    "tidelift",
+    "donate",
+    "donation",
+    "fundoss",
+    "npm"
+  ],
+  "author": "Ffloriel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ffloriel/github-sponsors/issues"
+  },
+  "homepage": "https://github.com/Ffloriel/github-sponsors#readme",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "jest": "^24.8.0",
+    "prettier": "^1.17.1",
+    "rollup": "^1.12.3",
+    "rollup-plugin-json": "^4.0.0",
+    "rollup-plugin-node-builtins": "^2.1.2",
+    "rollup-plugin-node-resolve": "^5.0.0"
+  },
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "commander": "^2.20.0",
+    "yaml": "^1.6.0"
+  }
+}
