@@ -7,11 +7,11 @@ program
   .version("1.0.0")
   .option("-t, --thanks-message", "Add a thank you message")
   .option("-d, --donate-message", "Add a donate message")
-  .option("-h, --hide", "Hide the message")
+  // .option("-h, --hide", "Hide the message")
   .parse(process.argv);
 
 export async function init(path = ".") {
-  if (program.hide || shouldHideMessage(process.env)) return;
+  if (shouldHideMessage(process.env)) return;
   try {
     const fundingConfig = await parseFundingFile(path);
     printDonationMessage(
