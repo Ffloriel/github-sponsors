@@ -9,30 +9,30 @@ describe('Integration test', () => {
 
   const consolelog = global.console.log
 
-  // it('prints everything', async () => {
+  it('prints everything', async () => {
 
-  //   let log = ''
-  //   console.log = jest.fn().mockImplementation((str1, str2) => {
-  //     log += str1 + str2
-  //   })
+    let log = ''
+    console.log = jest.fn().mockImplementation((str1, str2) => {
+      log += str1 + str2
+    })
 
-  //   await init(pkgPath, false)
+    await init(pkgPath, false)
 
-  //   console.log = consolelog
-  //   const content = [
-  //     'Thanks for installing pkg',
-  //     'Please consider donating to help us maintain this package.',
-  //     'GitHub',
-  //     'https://github.com/users/Jack/sponsorship',
-  //     'Patreon',
-  //     'https://patreon.com/Jack',
-  //     'Open Collective'
-  //   ]
+    console.log = consolelog
+    const content = [
+      'Thanks for installing pkg',
+      'Please consider donating to help us maintain this package.',
+      'GitHub',
+      'https://github.com/users/Jack/sponsorship',
+      'Patreon',
+      'https://patreon.com/Jack',
+      'Open Collective'
+    ]
 
-  //   content.forEach(sentence => {
-  //     expect(log.includes(sentence)).toBe(true)
-  //   })
-  // })
+    content.forEach(sentence => {
+      expect(log.includes(sentence)).toBe(true)
+    })
+  })
 
 
   it('returns expected result on postinstall script', async () => {
