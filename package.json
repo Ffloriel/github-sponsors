@@ -44,6 +44,8 @@
   },
   "homepage": "https://github.com/Ffloriel/github-sponsors#readme",
   "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
     "codacy-coverage": "^3.4.0",
     "eslint": "^5.16.0",
     "jest": "^24.8.0",

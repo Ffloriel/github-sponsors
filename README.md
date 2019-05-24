@@ -9,6 +9,7 @@
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 [![npm](https://img.shields.io/npm/v/github-sponsors.svg)](https://www.npmjs.com/package/github-sponsors)
 [![license](https://img.shields.io/github/license/ffloriel/github-sponsors.svg)]()
+[![dependabot](https://img.shields.io/badge/dependabot-enabled-brightgreen.svg?style=plastic&logo=dependabot)]()
 
 
 <p align="center">
@@ -42,16 +43,6 @@ Add in package.json:
     "postinstall": "github-sponsors"
   }
 }
-```
-
-```
-Usage: github-sponsors [options]
-
-Options:
-  -V, --version         output the version number
-  -t, --thanks-message  Add a thank you message
-  -d, --donate-message  Add a donate message
-  -h, --help            output usage information
 ```
 
 ## About GitHub Sponsors

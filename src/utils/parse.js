@@ -1,20 +1,24 @@
-import fs, { promises } from "fs";
+import fs from "fs";
+import { promisify } from "util";
 import path from "path";
 import YAML from "yaml";
+
+const readFile = promisify(fs.readFile);
+const access = promisify(fs.access);
 
 const FUNDING_FILENAME = "FUNDING.yml";
 
 // Parse the FUNDING.yml and return the content
-export const parseFundingFile = async () => {
+export const parseFundingFile = async (path = process.cwd()) => {
   let isFileExist = false;
-  const pathToFile = `${process.cwd()}/.github/${FUNDING_FILENAME}`;
+  const pathToFile = `${path}/.github/${FUNDING_FILENAME}`;
   try {
-    isFileExist = await promises.access(pathToFile, fs.constants.R_OK);
+    isFileExist = await access(pathToFile, fs.constants.R_OK);
   } catch (e) {
     throw new Error("FUNDING.yml file not found");
   }
 
-  const fileContent = await promises.readFile(pathToFile, "utf-8");
+  const fileContent = await readFile(pathToFile, "utf-8");
   const yamlDoc = YAML.parse(fileContent);
   return yamlDoc;
 };

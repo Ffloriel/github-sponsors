@@ -16,5 +16,5 @@ export default {
         }
     ],
     plugins: [builtins(), resolve(), json()],
-    external: ["fs", "child_process", "yaml", "commander", "chalk"]
+    external: ["fs", "util", "child_process", "yaml", "commander", "chalk"]
 }

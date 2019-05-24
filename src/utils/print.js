@@ -1,6 +1,6 @@
 import { execSync } from "child_process";
+import path from 'path';
 import chalk from "chalk";
-import packageJson from "./../../package.json";
 
 // from nuxt/opencollective
 
@@ -36,21 +36,17 @@ export const print = (color = null) => (str = "") => {
   console.log(leftPadding, str);
 };
 
-const DEFAULT_THANKS_MESSAGE = `Thanks for installing ${packageJson.name}`;
-const DEFAULT_DONATE_MESSAGE =
-  "Please consider donating to help us maintain this package.";
-
 export const printDonationMessage = (
   fundingConfig,
-  thanksMessage = DEFAULT_THANKS_MESSAGE,
-  donateMessage = DEFAULT_DONATE_MESSAGE
+  pkgPath,
 ) => {
+  const packageJson = require(path.resolve(pkgPath, './package.json'));
   const dim = print("dim");
   const yellow = print("yellow");
   const emptyLine = print();
 
-  yellow(thanksMessage);
-  dim(donateMessage);
+  yellow(`Thanks for installing ${packageJson.name}`);
+  dim("Please consider donating to help us maintain this package.");
   emptyLine();
   emptyLine();
   for (const [platform, value] of Object.entries(fundingConfig)) {
@@ -60,6 +56,7 @@ export const printDonationMessage = (
         break;
       case "patreon":
         print()(chalk.bold("Patreon"));
+        print()(`${chalk.underline(`https://patreon.com/${value}`)}`);
         break;
       case "open_collective":
         print()(chalk.bold("Open Collective"));
@@ -88,7 +85,7 @@ export const printDonationMessage = (
 };
 
 export const printGithub = githubUsers => {
-  print()(chalk.bold("Github"));
+  print()(chalk.bold("GitHub"));
   if (typeof githubUsers === "string") {
     githubUsers = [githubUsers];
   }
