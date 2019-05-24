@@ -1,19 +1,16 @@
 # Github Sponsors
 
 <p align="center">
-	<img src="./.assets/logo.png" height="200" width="200" alt="Purgecss logo"/>
+	<img src="https://github.githubassets.com/images/modules/site/sponsors/logo-mona.svg" height="200" width="200" alt="Purgecss logo"/>
 </p>
 
 ## What is Github Sponsors?
 
-When you are building a website, chances are that you are using a css framework
-like Bootstrap, Materializecss, Foundation, etc... But you will only use a small
-set of the framework and a lot of unused css styles will be included.
+GitHub Sponsors has been announced during Github Satellite at Berlin May 23rd. It is a new way for open source developers to collect donation from the community.
+A few ways to do that already exists, but GitHub Sponsors is taking responsibility in this area by adding this feature directly on GitHub.
+You can add a Sponsor button on the top of your projects and it will open a popup window containing links to the donation pages.
 
-This is where Purgecss comes into play. Purgecss analyzes your content and your
-css files. Then it matches the selectors used in your files with the one in your
-content files. It removes unused selectors from your css, resulting in smaller
-css files.
+It allows open source maintainers to print a post-install message easily for their packages. `github-sponsors` is using FUNDING.yml to retrieve the information and displaying it to the user.
 
 
 ## Getting Started
