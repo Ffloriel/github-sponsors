@@ -21,7 +21,7 @@ GitHub Sponsors has been announced during Github Satellite at Berlin May 23rd. I
 A few ways to do that already exists, but GitHub Sponsors is taking responsibility in this area by adding this feature directly on GitHub.
 You can add a Sponsor button on the top of your projects and it will open a popup window containing links to the donation pages.
 
-This package allows open source maintainers to print a post-install message easily for their packages. `github-sponsors` is using FUNDING.yml to retrieve the information and displaying it to the user.
+This package allows open source maintainers to print a post-install message easily for their packages. `github-sponsors` is using `FUNDING.yml` to retrieve the information and displaying it to the user.
 
 
 ## Getting Started
@@ -51,21 +51,3 @@ Add in package.json:
 - [About GitHub Sponsors](https://help.github.com/en/articles/about-github-sponsors)
 - [Sponsoring open source developers](https://help.github.com/en/articles/sponsoring-open-source-developers)
 - [Receiving sponsorships as a sponsored developer](https://help.github.com/en/articles/receiving-sponsorships-as-a-sponsored-developer)
-
-## Contributing
-
-Please read [CONTRIBUTING.md](./CONTRIBUTING.md) for details on our code of
-conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-Github Sponsors use [SemVer](http://semver.org/) for versioning.
-
-## Acknowledgment
-
-This repository is based on [nuxt/opencollective](https://github.com/nuxt/opencollective).
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
-for details.
