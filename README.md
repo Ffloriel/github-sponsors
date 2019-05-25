@@ -23,6 +23,9 @@ You can add a Sponsor button on the top of your projects and it will open a popu
 
 This package allows open source maintainers to print a post-install message easily for their packages. `github-sponsors` is using FUNDING.yml to retrieve the information and displaying it to the user.
 
+<p align="center">
+	<img src="./docs/assets/example-donation-message.png" height="250" width="auto" alt="Donation message"/>
+</p>
 
 ## Getting Started
 
