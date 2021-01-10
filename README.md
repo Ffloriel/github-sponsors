@@ -1,19 +1,11 @@
 # Github Sponsors
 
-[![Build Status](https://travis-ci.org/Ffloriel/github-sponsors.svg?branch=master)]()
-[![CircleCi](https://circleci.com/gh/Ffloriel/github-sponsors/tree/master.svg?style=shield)]()
-[![dependencies Status](https://david-dm.org/ffloriel/github-sponsors/status.svg)](https://david-dm.org/ffloriel/github-sponsors)
-[![devDependencies Status](https://david-dm.org/ffloriel/github-sponsors/dev-status.svg)](https://david-dm.org/ffloriel/github-sponsors?type=dev)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/e89da576413e44b5943d504bb134edb5)](https://www.codacy.com/app/florielfedry/github-sponsors?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Ffloriel/github-sponsors&amp;utm_campaign=Badge_Grade)
-[![Codacy Badge](https://api.codacy.com/project/badge/Coverage/e89da576413e44b5943d504bb134edb5)](https://www.codacy.com/app/florielfedry/github-sponsors?utm_source=github.com&utm_medium=referral&utm_content=Ffloriel/github-sponsors&utm_campaign=Badge_Coverage)
-[![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
-[![npm](https://img.shields.io/npm/v/github-sponsors.svg)](https://www.npmjs.com/package/github-sponsors)
-[![license](https://img.shields.io/github/license/ffloriel/github-sponsors.svg)]()
-[![dependabot](https://img.shields.io/badge/dependabot-enabled-brightgreen.svg?style=plastic&logo=dependabot)]()
-
 <p align="center">
 	<img src="https://github.githubassets.com/images/modules/site/sponsors/logo-mona.svg" height="200" width="200" alt="Mona logo"/>
 </p>
+
+
+> Do not use this package! Add funding to your package.json instead: https://docs.npmjs.com/cli/v7/configuring-npm/package-json#funding
 
 ## What is Github Sponsors?
 
@@ -23,28 +15,7 @@ You can add a Sponsor button on the top of your projects and it will open a popu
 
 This package allows open source maintainers to print a post-install message easily for their packages. `github-sponsors` is using FUNDING.yml to retrieve the information and displaying it to the user.
 
-<p align="center">
-	<img src="./docs/assets/example-donation-message.png" height="250" width="auto" alt="Donation message"/>
-</p>
 
-## Getting Started
-
-### Installation
-
-```
-npm install --save github-sponsors
-```
-
-### Usage
-
-Add in package.json:
-
-```json
-{
-  "scripts": {
-    "postinstall": "github-sponsors"
-  }
-}
 ```
 
 ## About GitHub Sponsors
